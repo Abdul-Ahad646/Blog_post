@@ -24,9 +24,9 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Description</label>
+                            <label for="exampleInputPassword1">Content</label>
                             <textarea class="form-control border border-primary" name="description"
-                                placeholder="Enter your description"></textarea>
+                                placeholder="Enter your Content"></textarea>
                             @error('description')
                             <div class="text-danger">{{ $message }}</div>
                             @enderror

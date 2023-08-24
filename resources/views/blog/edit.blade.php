@@ -1,9 +1,9 @@
 @extends('blog.layouts.app')
 @section('content')
 <div class="jumbotron">
-    <div class="p-6 text-gray-900">
-        <button><a href="{{ route('dashboard') }}"
-            class="font-semibold text-gray-600 hover:text-gray-400 dark:text-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-800">Dashboard</a></button>
+<div class="p-6 text-gray-900">
+        <a href="{{ route('dashboard') }}" class="btn btn-info ">Dashboard</a>
+        <a href="{{ route('welcome') }}" class="btn btn-success ">Home</a>
     </div>
     <div class="row ">
         <div class="col-12">
@@ -25,9 +25,9 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label>Description</label>
+                            <label>Content</label>
                             <input class="form-control border border-primary" name="description"
-                            placeholder="Description" value="{{$blog->description}}">
+                            placeholder="Content" value="{{$blog->description}}">
                             @error('description')
                             <div class="text-danger">{{ $message }}</div>
                             @enderror
